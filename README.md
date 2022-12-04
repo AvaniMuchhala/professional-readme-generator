@@ -1,27 +1,34 @@
-# my project
+# 
 ## Description
-nope
+
 
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
-- [How To Contribute](#how-to-contribute)
+- [Contributing](#contributing)
 - [Tests](#tests)
+- [Questions](#questions)
 
 ## Installation
 
 
 ## Usage
-nothing
+
 
 ## Credits
 
 ## License
 MIT
 
-## How to Contribute
-do not
+## Contributing
+
 
 ## Tests
+;
+
+## Questions
+[AvaniMuchhala](https://github.com/AvaniMuchhala)
+
+If you have questions, please email me at [avani.muchhala@case.edu](mailto:avani.muchhala@case.edu).

@@ -40,9 +40,12 @@ ${data.license}
 ${data.contribution}
 
 ## Tests
-${data.tests};
+${data.tests}
 
-## Questions`
+## Questions
+GitHub Profile: [${data.username}](https://github.com/${data.username})
+
+If you have questions, please email me at [${data.email}](mailto:${data.email}).`
 }
 
 module.exports = generateMarkdown;
