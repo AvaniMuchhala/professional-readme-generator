@@ -1,1 +1,27 @@
-{"username":"avanim","email":"avani","title":"idk","description":"no","license":"MIT","installation":"","tests":"","usage":"nothing","contribution":"dont"}
+# my project
+## Description
+nope
+
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+- [How To Contribute](#how-to-contribute)
+- [Tests](#tests)
+
+## Installation
+
+
+## Usage
+nothing
+
+## Credits
+
+## License
+MIT
+
+## How to Contribute
+do not
+
+## Tests
