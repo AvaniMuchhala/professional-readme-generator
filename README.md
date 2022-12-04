@@ -20,15 +20,16 @@
 ## Credits
 
 ## License
-MIT
+This project is licensed under the [MIT license.](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Contributing
 
 
 ## Tests
-;
+
 
 ## Questions
-[AvaniMuchhala](https://github.com/AvaniMuchhala)
+GitHub Profile: [](https://github.com/)
 
-If you have questions, please email me at [avani.muchhala@case.edu](mailto:avani.muchhala@case.edu).
+If you have questions, please email me at [](mailto:).
