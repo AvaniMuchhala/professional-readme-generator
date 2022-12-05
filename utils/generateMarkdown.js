@@ -24,13 +24,13 @@ function renderLicenseLink(license) {
   let link;
   switch(license) {
     case "MIT":
-      link = "https://opensource.org/licenses/MIT";
+      link = "https://choosealicense.com/licenses/mit/";
       break;
     case "APACHE 2.0":
-      link = "https://opensource.org/licenses/Apache-2.0";
+      link = "https://choosealicense.com/licenses/apache-2.0/";
       break;
     case "GPL 3.0":
-      link = "https://opensource.org/licenses/GPL-3.0";
+      link = "https://choosealicense.com/licenses/gpl-3.0/";
       break;
     case "BSD 3":
       link = "https://opensource.org/licenses/BSD-3-Clause";
@@ -58,13 +58,14 @@ function renderLicenseSection(license) {
 // Return text for Questions section if user inputted their email address
 function renderEmailText(email) {
   if (email !== "") {
-    const text = `If you have any questions, please email me at [${email}](mailto:${email}).`;
+    const text = `If you have any questions, please email me at [${email}](mailto:${email}). Please include the repository name in the email subject.`;
     return text;
   } else {
     return "";
   }
 }
 
+// Render installation section depending on whether user provided installation instructions
 function renderInstallationSection(data) {
   if (data.installation === "y") {
     return `To install necessary dependencies, run the following command:
@@ -76,6 +77,7 @@ ${data.installationCommand}
   }
 }
 
+// Render tests section depending on whether user provided tests instructions
 function renderTestsSection(data) {
   if (data.tests === "y") {
     return `To run tests, run the following command:
@@ -105,7 +107,7 @@ function renderContributingSection(contribution) {
   }
 }
 
-// TODO: Create a function to generate markdown for README
+// Generates markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
 ${renderLicenseBadge(data.license)}
@@ -115,7 +117,6 @@ ${data.description}
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
 - [License](#license)
 - [Contributing](#contributing)
 - [Tests](#tests)
@@ -126,8 +127,6 @@ ${renderInstallationSection(data)}
 
 ## Usage
 ${renderUsageSection(data.usage)}
-
-## Credits
 
 ## License
 ${renderLicenseSection(data.license)}

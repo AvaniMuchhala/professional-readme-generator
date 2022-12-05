@@ -1,9 +1,9 @@
-// TODO: Include packages needed for this application
+// Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown.js");
 
-// TODO: Create an array of questions for user input
+// Array of questions for user input
 const questions = [
     {
         type: "input",
@@ -67,6 +67,7 @@ const questions = [
         type: "input",
         message: "Is there a command that should be run to install dependencies? (y/n)",
         name: "installation",
+        // Ensure that user types either 'y' or 'n' for confirmation
         validate: (input) => {
             if (input.trim().toLowerCase() === "y" || input.trim().toLowerCase() === "n") {
                 return true;
@@ -80,6 +81,7 @@ const questions = [
         type: "input",
         message: "What is the command to install dependencies?",
         name: "installationCommand",
+        // Only ask this question when user answers 'y' to previous question
         when: (answers) => answers.installation === "y"
     },
     {
@@ -115,19 +117,18 @@ const questions = [
     }
 ];
 
-// TODO: Create a function to write README file
+// Write answers to README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, generateMarkdown(data), err => 
         err ? console.error(err) : console.log("README.md created!")
     );
 }
 
-// TODO: Create a function to initialize app
+// Initialize app
 function init() {
     inquirer
         .prompt(questions)
         .then(data => {
-            console.log(data);
             writeToFile("README.md", data);
         });
 }
