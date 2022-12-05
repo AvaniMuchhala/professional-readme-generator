@@ -65,8 +65,22 @@ const questions = [
     },
     {
         type: "input",
-        message: "What command should be run to install dependencies?",
-        name: "installation"
+        message: "Is there a command that should be run to install dependencies? (y/n)",
+        name: "installation",
+        validate: (input) => {
+            if (input.trim().toLowerCase() === "y" || input.trim().toLowerCase() === "n") {
+                return true;
+            } else {
+                return "Invalid. Must type either 'y' or 'n'.";
+            }
+        },
+        filter: (input) => input.trim().toLowerCase()
+    },
+    {
+        type: "input",
+        message: "What is the command to install dependencies?",
+        name: "installationCommand",
+        when: (answers) => answers.installation === "y"
     },
     {
         type: "input",

@@ -65,6 +65,17 @@ function renderEmailText(email) {
   }
 }
 
+function renderInstallationSection(data) {
+  if (data.installation === "y") {
+    return `To install necessary dependencies, run the following command:
+\`\`\`
+${data.installationCommand}
+\`\`\``;
+  } else {
+    return "N/A";
+  }
+}
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
@@ -82,9 +93,7 @@ ${data.description}
 - [Questions](#questions)
 
 ## Installation
-\`\`\`
-${data.installation}
-\`\`\`
+${renderInstallationSection(data)}
 
 ## Usage
 ${data.usage}
