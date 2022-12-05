@@ -76,6 +76,17 @@ ${data.installationCommand}
   }
 }
 
+function renderTestsSection(data) {
+  if (data.tests === "y") {
+    return `To run tests, run the following command:
+\`\`\`
+${data.testCommand}
+\`\`\``;
+  } else {
+    return "N/A";
+  }
+}
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
@@ -107,7 +118,7 @@ ${renderLicenseSection(data.license)}
 ${data.contribution}
 
 ## Tests
-${data.tests}
+${renderTestsSection(data)}
 
 ## Questions
 You can visit me at my GitHub profile: [${data.username}](https://github.com/${data.username})

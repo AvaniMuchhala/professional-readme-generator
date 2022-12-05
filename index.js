@@ -84,8 +84,22 @@ const questions = [
     },
     {
         type: "input",
-        message: "What command should be run to run tests?",
-        name: "tests"
+        message: "Is there a command to run tests? (y/n)",
+        name: "tests",
+        validate: (input) => {
+            if (input.trim().toLowerCase() === "y" || input.trim().toLowerCase() === "n") {
+                return true;
+            } else {
+                return "Invalid. Must type either 'y' or 'n'.";
+            }
+        },
+        filter: (input) => input.trim().toLowerCase()
+    },
+    {
+        type: "input",
+        message: "What is the command to run tests?",
+        name: "testCommand",
+        when: (answers) => answers.tests === "y"
     },
     {
         type: "input",

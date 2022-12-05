@@ -1,7 +1,7 @@
-# Professional README Generator
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+# idk
+[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 ## Description
-generate README.md from user input
+ok
 
 ## Table of Contents
 - [Installation](#installation)
@@ -13,10 +13,7 @@ generate README.md from user input
 - [Questions](#questions)
 
 ## Installation
-To install necessary dependencies, run the following command:
-```
-npm i
-```
+N/A
 
 ## Usage
 
@@ -24,15 +21,18 @@ npm i
 ## Credits
 
 ## License
-This project is licensed under the [APACHE 2.0 license.](https://opensource.org/licenses/Apache-2.0)
+This project is licensed under the [BSD 3 license.](https://opensource.org/licenses/BSD-3-Clause)
 
 ## Contributing
 
 
 ## Tests
-
+To run tests, run the following command:
+```
+npm test
+```
 
 ## Questions
-You can visit me at my GitHub profile: [AvaniMuchhala](https://github.com/AvaniMuchhala)
+You can visit me at my GitHub profile: [avani](https://github.com/avani)
 
-If you have any questions, please email me at [avani.muchhala@case.edu](mailto:avani.muchhala@case.edu).
+If you have any questions, please email me at [avani](mailto:avani).
