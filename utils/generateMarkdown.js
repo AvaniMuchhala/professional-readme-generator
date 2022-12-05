@@ -75,7 +75,9 @@ ${data.description}
 - [Questions](#questions)
 
 ## Installation
+\`\`\`
 ${data.installation}
+\`\`\`
 
 ## Usage
 ${data.usage}

@@ -1,4 +1,5 @@
 # 
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Description
 
 
@@ -12,7 +13,9 @@
 - [Questions](#questions)
 
 ## Installation
+```
 
+```
 
 ## Usage
 
@@ -21,7 +24,6 @@
 
 ## License
 This project is licensed under the [MIT license.](https://opensource.org/licenses/MIT)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Contributing
 
@@ -30,6 +32,6 @@ This project is licensed under the [MIT license.](https://opensource.org/license
 
 
 ## Questions
-GitHub Profile: [](https://github.com/)
+GitHub Profile: [AvaniMuchhala](https://github.com/AvaniMuchhala)
 
 If you have questions, please email me at [](mailto:).

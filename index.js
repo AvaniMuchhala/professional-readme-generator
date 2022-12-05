@@ -8,11 +8,24 @@ const questions = [
     {
         type: "input",
         message: "What is your GitHub username?",
-        name: "username"
+        name: "username",
+        validate: (input) => {
+            // If user inputted no text
+            if (input.trim().length === 0) {
+                return "Must include text. Re-enter username.";
+            // If input includes spaces between text
+            } else if (input.trim().includes(" ")) {
+                return "GitHub username cannot include spaces. Re-enter username.";
+            } else {
+                return true;
+            }
+        },
+        // Return the input without extra spaces to be used in rest of program 
+        filter: (input) => input.trim()
     },
     {
         type: "input",
-        message: "What is your email address?",
+        message: "What is your email address? (press enter to skip)",
         name: "email"
     },
     {
