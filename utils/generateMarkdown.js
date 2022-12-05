@@ -1,28 +1,24 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
+// Returns a license badge with link based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  let badge;
-  switch(license) {
-    case "MIT":
+  if (license === "None") {
+    return "";
+  } else {
+    let badge;
+    if (license === "MIT") {
       badge = "https://img.shields.io/badge/License-MIT-yellow.svg";
-      break;
-    case "APACHE 2.0":
+    } else if (license === "APACHE 2.0") {
       badge = "https://img.shields.io/badge/License-Apache_2.0-blue.svg";
-      break;
-    case "GPL 3.0":
+    } else if (license === "GPL 3.0") {
       badge = "https://img.shields.io/badge/License-GPLv3-blue.svg";
-      break;
-    case "BSD 3":
+    } else if (license === "BSD 3") {
       badge = "https://img.shields.io/badge/License-BSD_3--Clause-blue.svg";
-      break;
-    default:
-      badge = "";
-      break;
+    }
+    return `[![License](${badge})](${renderLicenseLink(license)})`;
   }
-  return badge;
 }
 
-// TODO: Create a function that returns the license link
+// Returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   let link;
@@ -39,6 +35,7 @@ function renderLicenseLink(license) {
     case "BSD 3":
       link = "https://opensource.org/licenses/BSD-3-Clause";
       break;
+    // if license === "None"
     default:
       link = "";
       break;
@@ -46,12 +43,12 @@ function renderLicenseLink(license) {
   return link;
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// Returns the license section of README
+// If there is no license, return "None"
 function renderLicenseSection(license) {
   let text;
   if (license === "None") {
-    text = "No license.";
+    text = "None.";
   } else {
     text = `This project is licensed under the [${license} license.](${renderLicenseLink(license)})`;
   }
@@ -71,7 +68,7 @@ function renderEmailText(email) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-[![License](${renderLicenseBadge(data.license)})](${renderLicenseLink(data.license)})
+${renderLicenseBadge(data.license)}
 ## Description
 ${data.description}
 

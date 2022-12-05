@@ -1,7 +1,7 @@
-# avani's application 2022
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-## Description
+# k
 
+## Description
+j
 
 ## Table of Contents
 - [Installation](#installation)
@@ -23,7 +23,7 @@
 ## Credits
 
 ## License
-This project is licensed under the [MIT license.](https://opensource.org/licenses/MIT)
+None.
 
 ## Contributing
 
@@ -32,5 +32,6 @@ This project is licensed under the [MIT license.](https://opensource.org/license
 
 
 ## Questions
-You can visit me at my GitHub profile: [avani](https://github.com/avani)
+You can visit me at my GitHub profile: [k](https://github.com/k)
 
+If you have any questions, please email me at [k](mailto:k).
