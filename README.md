@@ -1,5 +1,5 @@
 # idk
-[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Description
 ok
 
@@ -16,23 +16,20 @@ ok
 N/A
 
 ## Usage
-
+N/A
 
 ## Credits
 
 ## License
-This project is licensed under the [BSD 3 license.](https://opensource.org/licenses/BSD-3-Clause)
+This project is licensed under the [MIT license.](https://opensource.org/licenses/MIT)
 
 ## Contributing
 
 
 ## Tests
-To run tests, run the following command:
-```
-npm test
-```
+N/A
 
 ## Questions
-You can visit me at my GitHub profile: [avani](https://github.com/avani)
+You can visit me at my GitHub profile: [AvaniMuchhala](https://github.com/AvaniMuchhala)
 
-If you have any questions, please email me at [avani](mailto:avani).
+If you have any questions, please email me at [sweetumuchhala15@gmail.com](mailto:sweetumuchhala15@gmail.com).

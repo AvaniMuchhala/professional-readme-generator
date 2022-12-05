@@ -104,12 +104,14 @@ const questions = [
     {
         type: "input",
         message: "What does the user need to know about using the repo?",
-        name: "usage"
+        name: "usage",
+        filter: (input) => input.trim()
     },
     {
         type: "input",
         message: "What does the user need to know about contributing to the repo?",
-        name: "contribution"
+        name: "contribution",
+        filter: (input) => input.trim()
     }
 ];
 

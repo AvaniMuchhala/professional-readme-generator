@@ -87,6 +87,24 @@ ${data.testCommand}
   }
 }
 
+// If user inputted no text for usage, return N/A, otherwise return user's input
+function renderUsageSection(usage) {
+  if (usage === "") {
+    return "N/A";
+  } else {
+    return usage;
+  }
+}
+
+// If user inputted no text for contribution, return N/A, otherwise return user's input
+function renderContributingSection(contribution) {
+  if (contribution === "") {
+    return "N/A";
+  } else {
+    return contribution;
+  }
+}
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
@@ -107,7 +125,7 @@ ${data.description}
 ${renderInstallationSection(data)}
 
 ## Usage
-${data.usage}
+${renderUsageSection(data.usage)}
 
 ## Credits
 
@@ -115,7 +133,7 @@ ${data.usage}
 ${renderLicenseSection(data.license)}
 
 ## Contributing
-${data.contribution}
+${renderContributingSection(data.contribution)}
 
 ## Tests
 ${renderTestsSection(data)}
