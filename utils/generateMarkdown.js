@@ -58,6 +58,7 @@ function renderLicenseSection(license) {
   return text;
 }
 
+// Return text for Questions section if user inputted their email address
 function renderEmailText(email) {
   if (email !== "") {
     const text = `If you have any questions, please email me at [${email}](mailto:${email}).`;

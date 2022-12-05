@@ -32,12 +32,30 @@ const questions = [
     {
         type: "input",
         message: "What is your project's name?",
-        name: "title"
+        name: "title",
+        validate: (input) => {
+            // If user inputted no text
+            if (input.trim().length === 0) {
+                return "Must include project name.";
+            } else {
+                return true;
+            }
+        },
+        filter: (input) => input.trim()
     },
     {
         type: "input",
         message: "Please write a short description of your project.",
-        name: "description"
+        name: "description",
+        validate: (input) => {
+            // If user inputted no text
+            if (input.trim().length === 0) {
+                return "Must include project description.";
+            } else {
+                return true;
+            }
+        },
+        filter: (input) => input.trim()
     },
     {
         type: "list",
