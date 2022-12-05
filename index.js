@@ -25,8 +25,9 @@ const questions = [
     },
     {
         type: "input",
-        message: "What is your email address? (press enter to skip)",
-        name: "email"
+        message: "What is your email address?",
+        name: "email",
+        filter: (input) => input.trim()
     },
     {
         type: "input",

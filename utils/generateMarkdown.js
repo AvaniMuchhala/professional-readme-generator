@@ -58,6 +58,15 @@ function renderLicenseSection(license) {
   return text;
 }
 
+function renderEmailText(email) {
+  if (email !== "") {
+    const text = `If you have any questions, please email me at [${email}](mailto:${email}).`;
+    return text;
+  } else {
+    return "";
+  }
+}
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
@@ -94,9 +103,9 @@ ${data.contribution}
 ${data.tests}
 
 ## Questions
-GitHub Profile: [${data.username}](https://github.com/${data.username})
+You can visit me at my GitHub profile: [${data.username}](https://github.com/${data.username})
 
-If you have questions, please email me at [${data.email}](mailto:${data.email}).`
+${renderEmailText(data.email)}`
 }
 
 module.exports = generateMarkdown;

@@ -32,6 +32,6 @@ This project is licensed under the [MIT license.](https://opensource.org/license
 
 
 ## Questions
-GitHub Profile: [AvaniMuchhala](https://github.com/AvaniMuchhala)
+You can visit me at my GitHub profile: [hi](https://github.com/hi)
 
-If you have questions, please email me at [](mailto:).
+If you have any questions, please email me at [sweetumuchhala15@gmail.com](mailto:sweetumuchhala15@gmail.com).
