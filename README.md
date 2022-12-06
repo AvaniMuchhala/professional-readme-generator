@@ -1,35 +1,39 @@
-# no
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://choosealicense.com/licenses/mit/)
+# Professional README Generator
+
 ## Description
-a
+
+This is a command-line application to dynamically generate a high-quality, professional README.md file for a project from a user's input. The application prompts the user to answer a series of questions to provide information (i.e. email address, project name, description, etc.). This information is then used to generate a README.md file and fill in sections of a template. This project uses the Inquirer package.
+
+This project was built to help other developers quickly create a high-quality README for any of their projects so that they can spend more time actually working on the project. By working on this project, I learned how to use Node.js and the Inquirer package as well as receive user input from the command-line.
 
 ## Table of Contents
+
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [Contributing](#contributing)
-- [Tests](#tests)
-- [Questions](#questions)
+- [How to Contribute](#how-to-contribute)
 
 ## Installation
-To install necessary dependencies, run the following command:
+Download Node.js for your platform. After cloning this repository, run the following command in the terminal to install the Inquirer package dependency:
 ```
-idk
+npm install
 ```
 
 ## Usage
-nothing
+
+Open the index.js in the Integrated Terminal in your editor. Run the following command in the terminal to use this application: 
+```
+node index.js
+```
+Answer the following questions about your project. The app will alert you if you provide invalid input. After answering the final question, a README.md with your answers formatted will be created in the current working directory. Copy/move the README.md to your repository.
+
+Here is a [walkthrough video](https://drive.google.com/file/d/1VDmumnUmtNXP92vRn74XbD9qP5aSZoWc/view?usp=sharing) demonstrating the functionality of the application, also displayed below:
+![application walkthrough video](./assets/Mod9-gif.gif)
 
 ## License
-This project is licensed under the [MIT license.](https://choosealicense.com/licenses/mit/)
 
-## Contributing
-please do
+MIT License. Please refer to the LICENSE in the repo.
 
-## Tests
-N/A
+## How to Contribute
 
-## Questions
-You can visit me at my GitHub profile: [avani](https://github.com/avani)
-
-If you have any questions, please email me at [idk](mailto:idk). Please include the repository name in the email subject.
+If you would like to contribute to this project, please email me at: avani.muchhala@case.edu.
